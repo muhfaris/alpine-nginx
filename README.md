@@ -14,10 +14,19 @@ and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
     * alpine v.3.6
 
 ## How to use
-clone images from docker hub
+clone images from docker hub.
+
 `docker pull mhfaris/alpine-nginx`
 
-and then you can run images with this command
-``sudo docker run -d -p 80:80 alpine-nginx:v3.0``
+and then you can run images with this command.
 
+``sudo docker run -d -p 80:80 --name nginx alpine-nginx:v3.0``
+
+stop container
+
+``sudo docker stop nginx``
+
+start image
+
+``sudo docker start nginx``
 
