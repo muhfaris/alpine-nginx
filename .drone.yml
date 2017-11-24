@@ -1,0 +1,7 @@
+pipeline:
+    build:
+        env_file:
+            - ./build-images.sh
+            - ./run-images.sh
+        when:
+            event: push
