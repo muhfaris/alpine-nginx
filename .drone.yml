@@ -1,7 +1,8 @@
 pipeline:
     build:
-        env_file:
-            - ./build-images.sh
-            - ./run-images.sh
+        image: plugin/docker:17.05
+        tags:
+            - latest
+        dockerfile: ./Dockerfile
         when:
             event: push
