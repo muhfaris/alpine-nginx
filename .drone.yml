@@ -1,6 +1,10 @@
 pipeline:
     build:
         image: plugin/docker:17.05
+        username: ${DOCKER_USERNAME}
+        password: ${DOCKER_PASSWORD}
+        email: ${DOCKER_EMAIL}
+        repo: ${DOCKER_REPO}
         tags:
             - latest
         dockerfile: ./Dockerfile
